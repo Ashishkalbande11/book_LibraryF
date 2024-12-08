@@ -24,7 +24,7 @@ const Favourites = () => {
     <>
     {favBooks && favBooks.length === 0 && 
       <div className='text-4xl flex items-center justify-center  h-[200px] font-semibold text-yellow-500'>No Favourite book</div>}
-      <div className='grid  grid-cols-2 md:grid-cols-3 gap-2'>
+      <div className='grid  grid-cols-1 md:grid-cols-3 gap-2'>
         
         {favBooks && favBooks.map((item, index) => {
           return (
