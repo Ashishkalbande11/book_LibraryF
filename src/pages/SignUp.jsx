@@ -21,7 +21,7 @@ const SignUp = () => {
           alert("All fields required !!");
         }else{
           const response =await axios.post("https://booklibrarybackend-9e8y.onrender.com/api/sign-up", userData);
-          alert(response.data.message);ho
+          alert(response.data.message);
           navigate("/log-in")
         }
       } catch (error) {
