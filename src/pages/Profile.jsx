@@ -33,7 +33,7 @@ const Profile = () => {
                 <Sidebar data={profile} />
                 <MobileNav />
               </div>
-              <div className=' w-5/6'>
+              <div className='flex justify-center items-center lg:w-5/6'>
                 <Outlet />
               </div>
           </>
