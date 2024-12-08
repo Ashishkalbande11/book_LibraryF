@@ -12,7 +12,7 @@ const BookCard = ({ items, fav }) => {
   }
 
   const handleRemoveBook = async() => {
-    const data = await axios.put("http://localhost:8080/api/remove-book",{},{headers});
+    const data = await axios.put("https://booklibrarybackend-9e8y.onrender.com/api/remove-book",{},{headers});
       console.log(data);
         alert(data.data.message);
   }
