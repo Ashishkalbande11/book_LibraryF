@@ -33,7 +33,7 @@ const AllOrders = () => {
 
   const submitChanges = async(i) => {
     const id = allOrders[i]._id;
-    const res = await axios.put(`https://booklibrarybackend-9e8y.onrender.comapi/update-status/${id}`,values, {headers});
+    const res = await axios.put(`https://booklibrarybackend-9e8y.onrender.com/api/update-status/${id}`,values, {headers});
 
     alert(res.data.message);
     // console.log(res)
