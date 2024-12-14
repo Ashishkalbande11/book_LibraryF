@@ -39,7 +39,7 @@ const App = () => {
           <Route path='/all-books' element={<AllBooks />}/>
           <Route path='/cart' element={<Cart />}/>
           <Route path='/profile' element={<Profile />}>
-            {role === "user" ? (<Route index element={<Favourites />}/>) : (<Route index element={<AllOrders />}/>)}
+            {role === "user" ? (<Route  element={<Favourites />}/>) : (<Route  element={<AllOrders />}/>)}
             {role === 'admin' && <Route path='/profile/add-book' element={<AddBook />}/>}
             <Route path='/profile/order-history' element={<UserOrderHistory />}/>
             <Route path='/profile/settings' element={<Settings />}/>

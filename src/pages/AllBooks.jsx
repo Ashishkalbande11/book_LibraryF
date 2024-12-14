@@ -17,7 +17,7 @@ const AllBooks = () => {
         getData();
     },[])
   return (
-      <div className='bg-zinc-900 px-12 py-8 h-full'>
+      <div className='bg-zinc-900 px-12 py-8 h-[100%]'>
         <h3 className='font-semibold text-3xl text-yellow-200'>All Books</h3>
         {!book && (
           <div className='flex items-center justify-center h-screen'>

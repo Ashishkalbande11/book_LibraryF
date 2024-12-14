@@ -22,9 +22,10 @@ const AllOrders = () => {
     const getData = async() => {
       const res = await axios.get("https://booklibrarybackend-9e8y.onrender.com/api/get-all-orders",{headers});
       setAllOrders(res.data.data);
+      console.log(res.data);
     }
     getData();
-  },[])
+  },[allOrders])
 
   const change = (e) => {
     const {value} = e.target;

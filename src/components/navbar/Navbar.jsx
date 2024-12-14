@@ -10,7 +10,7 @@ const Navbar = () => {
     const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
     const role = useSelector((state) => state.auth.role)
     // console.log(isLoggedIn);
-    
+
     const links = [
         {
             title : "Home",
@@ -51,7 +51,7 @@ const Navbar = () => {
   return (
 
     <>
-        <nav className='z-50 relative flex bg-zinc-800 text-white px-8 py-4 items-center justify-between'>
+        <nav className='z-50 relative flex bg-zinc-800 text-white px-8 py-4 items-center justify-between '>
         
         <div className='flex items-center'>
             <img className='h-10 me-1' src="https://cdn-icons-png.flaticon.com/128/10433/10433049.png" alt="logo" />
